@@ -23,18 +23,10 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/api/users/**
-        - id: fund-transfer-service
-          uri: lb://fund-transfer-service
-          predicates:
-            - Path=/api/fund-transfers/**
         - id: account-service
           uri: lb://account-service
           predicates:
             - Path=/accounts/**
-        - id: sequence-generator
-          uri: lb://sequence-generator
-          predicates:
-            - Path=/sequence/**
         - id: transaction-service
           uri: lb://transaction-service
           predicates:
